@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 350px;
+      padding: 16px;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    
+    .tagline {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+    
+    .content {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 16px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .word {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      text-align: center;
+      padding: 8px 0;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+    }
+    
+    .definition {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    
+    .part-of-speech {
+      font-style: italic;
+      color: #ffd700;
+      font-size: 12px;
+      margin-right: 8px;
+    }
+    
+    .loading {
+      text-align: center;
+      padding: 20px;
+      font-style: italic;
+    }
+    
+    .error {
+      color: #ffcccb;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .no-word {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.8;
+    }
+    
+    .phonetic {
+      font-size: 14px;
+      color: #ffd700;
+      margin-bottom: 8px;
+      font-family: monospace;
+    }
+    
+    .refresh-btn {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+      margin-top: 10px;
+      width: 100%;
+    }
+    
+    .refresh-btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">📘 ClipDee</div>
+    <div class="tagline">Word definitions from your clipboard</div>
+  </div>
+  
+  <div class="content">
+    <div id="loading" class="loading">
+      Reading clipboard...
+    </div>
+    
+    <div id="content" style="display: none;">
+      <div id="word" class="word"></div>
+      <div id="phonetic" class="phonetic"></div>
+      <div id="definitions"></div>
+    </div>
+    
+    <div id="error" class="error" style="display: none;"></div>
+    
+    <div id="no-word" class="no-word" style="display: none;">
+      Copy a word and click the extension icon to see its definition.
+    </div>
+    
+    <button id="refresh" class="refresh-btn" style="display: none;">Refresh</button>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

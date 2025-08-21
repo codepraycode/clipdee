@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Dark theme version -->
+  <defs>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d3748"/>
+      <stop offset="100%" stop-color="#1a202c"/>
+    </linearGradient>
+  </defs>
+  
+  <circle cx="64" cy="64" r="60" fill="url(#darkGrad)" stroke="#4a5568" stroke-width="2"/>
+  
+  <!-- Clipboard base -->
+  <rect x="32" y="28" width="44" height="58" rx="4" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1.5"/>
+  
+  <!-- Clipboard clip -->
+  <rect x="48" y="22" width="12" height="8" rx="2" fill="#718096"/>
+  <rect x="50" y="24" width="8" height="4" rx="1" fill="#f7fafc"/>
+  
+  <!-- Text lines -->
+  <rect x="38" y="38" width="20" height="2" rx="1" fill="#3182ce"/>
+  <rect x="38" y="44" width="26" height="2" rx="1" fill="#4299e1"/>
+  <rect x="38" y="50" width="18" height="2" rx="1" fill="#63b3ed"/>
+  
+  <!-- Book overlay -->
+  <g transform="translate(54, 44)">
+    <rect x="0" y="0" width="20" height="26" rx="2" fill="#ecc94b"/>
+    <rect x="2" y="2" width="16" height="22" rx="1" fill="#f7fafc"/>
+    <rect x="0" y="0" width="3" height="26" rx="1" fill="#ed8936"/>
+    
+    <!-- Text on book -->
+    <rect x="5" y="6" width="10" height="1" fill="#2d3748"/>
+    <rect x="5" y="9" width="8" height="1" fill="#2d3748"/>
+    <rect x="5" y="12" width="12" height="1" fill="#2d3748"/>
+    <rect x="5" y="15" width="9" height="1" fill="#2d3748"/>
+    
+    <!-- Bookmark -->
+    <polygon points="17,0 20,0 20,8 18.5,6 17,8" fill="#e53e3e"/>
+  </g>
+  
+  <!-- "D" letter -->
+  <text x="90" y="95" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#cbd5e0">D</text>
+</svg>
